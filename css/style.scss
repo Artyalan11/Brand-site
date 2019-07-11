@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("variables.scss");
+
+// // variables
+// $green-color: #7ACC2D;
+// $white-color: white;
+// $black-color: #313337;
+// $gray-color: #c1bcbc;
+// // tipográfia
+// $normal: 12px;
+// // espaciado
+// $space: 10px;
+// $space20: 20px;
+// // box shadow
+// $box:  0 0 1px #c1bcbc;
+// $bold: 700;
+
+//
+// html,body{
+//     margin: 0px;
+//     padding: 0px;
+//     font-size: $normal;
+//     font-family: 'Open Sans', sans-serif;
+    
+// }
+// section{
+//     padding: 3%;
+//     float: left;
+//     width: 100%;
+//     box-sizing: border-box;
+//     .content{
+//         width: 100%;
+//     }
+// }
+// nav{
+//     background: $green-color;
+//     padding: $space;
+//     color: $white-color;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     ul{
+//         display: flex;
+//         li{
+//             padding-left: 20px;
+//             list-style: none;
+//             a{
+//                 color: $black-color;
+//                 text-decoration: none;
+//                 &:hover{
+//                     color: $white-color;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// p,label{
+//     font-size: $normal;
+// }
+/////////btn
+.main_button{
+    background-color: $green-color;
+    width: 100%;
+    padding: $space;
+    font-size: $normal;
+    color: $white-color;
+    border: 0;
+    border-radius: 2px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: $bold;
+    font-size: 17px;
+    &:hover{
+        background-color: #5E9E22;
+        cursor: pointer;
+    }
+}
+// main section
+.main_section{
+    padding: 15%;
+    text-align: center;
+    .main_title{
+        font-family: 'Open sans', sans-serif;
+        font-weight: $bold;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.products{
+    background-image: url("../img/curve.png");
+    background-size: cover;
+    background-position: center top;
+    height: 344px;
+    // padding: 28%;
+
+    display: flex;
+    justify-content: center;
+    .img_content{
+        text-align: center;
+    }
+    .product{
+        padding: $space20;
+        margin-top: -270px;
+        width: 239px;
+        .content{
+            background-color: $white-color;
+            padding: $space;
+            box-shadow: $box;
+            .title_product{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: $bold;
+                font-size: 17px;
+                text-align: left;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        // .main_button{
+        //     background-color: $green-color;
+        //     width: 100%;
+        //     padding: $space;
+        //     font-size: $normal;
+        //     color: $white-color;
+        //     border: 0;
+        //     border-radius: 2px;
+        //     font-family: 'Open sans', sans-serif;
+        //     font-weight: $bold;
+        //     font-size: 17px;
+        //     &:hover{
+        //         background-color: #5E9E22;
+        //         cursor: pointer;
+        //     }
+        // }
+    }
+}
+.advantage_product{
+    // text-align: center;
+    border-bottom: 2px solid $gray-color;
+    // display: inline-flex;
+    // flex-direction: row;
+    // justify-content: center;
+    .content{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: flex-start;
+        .advantage_box{
+            width: 250px;
+            // display: inline-block;
+            padding: 10px;
+            flex: 0 1 350px;
+            text-align: center;
+            .img_container, h3{
+                text-align: center;
+                img{
+                    height: 104px;
+                }
+            }
+            h3{
+                font-size: 17px;
+            }
+            p{
+                width: 250px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.mentions{
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-size: $bold;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        .mention_box{
+            width: 239px;
+            flex: 0 1 auto;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: $box;
+            .img_content{
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
+            h3{
+                font-size: 17px;
+                text-align: left;
+                margin: 0 0 5px 0;
+            }
+            p{
+                text-align: left;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+footer{
+    background-color: $black-color;
+    float: left;
+    width: 100%;
+    // height: 60px;
+    box-sizing: border-box;
+    .footer_content{
+        padding: 5px;
+        a{
+            color: $white-color;
+            text-decoration: none;
+            line-height: 60px;
+            float: left;
+            &:hover{
+                color: $white-color;
+            }
+            &:last-child{
+                float: right;
+            }
+        }
+    }
+}
+////////////////////////////////////////////////
+.products-section{
+    .container{
+        .row{
+            .img-container{
+                text-align: center;
+                .product-img{
+                    width: 150px;
+                    &.alternative-width{
+                        width: 170px;
+                    }
+                }
+            }
+            .col-8{
+                // display: table;
+                .txt_product_container{
+                    height: 100%;
+                    padding-top: 21px;
+                    display:table-cell;
+                    vertical-align:middle;
+
+                }
+            }
+        }
+    }
+}
+////////////////Página ventas//////////////////////
+.modulo_pago{
+    background-color: $white-color;
+    box-shadow: $box;
+    padding: $space;
+    margin: 50px 0;
+    .modulo_pago_images{
+        margin: 0 auto;
+        max-width: 150px;
+        text-align: center;
+    }
+    .data{
+        margin-top: $space;
+        width: 100%;
+        height: 35px;
+        border-radius: 2px;
+        border: 1px solid $black-color;
+        box-sizing: border-box;
+    }
+    .main_button{
+        margin-top: 10px;
+    }
+}

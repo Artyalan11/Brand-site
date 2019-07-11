@@ -1,0 +1,16 @@
+// @import 'variables.scss';
+body{
+    background: $black-color; 
+    text-align: center;
+    color: $white-color;
+    display: flex;   //Centrar en medio de pantalla
+    justify-content: center;
+    align-items: center;
+    height: 100vh; //viewport height todo el alto de la pantalla
+    .content_paypal{
+        a{
+            color: $green-color;
+        }
+    }
+} 
+

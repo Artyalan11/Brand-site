@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1380px) {
+  .main_section {
+    padding: 220px 15%; } }
+
+@media only screen and (max-width: 991px) {
+  .products {
+    display: inherit;
+    height: auto; }
+    .products .product {
+      margin-top: auto;
+      margin: 0 auto; }
+  .advantage_product .content {
+    display: initial; }
+    .advantage_product .content .advantage_box {
+      margin: 20px auto; }
+  .mentions .content {
+    display: initial; }
+    .mentions .content .mention_box {
+      margin: 30px auto; } }
+
+@media only screen and (max-width: 767px) {
+  .main_section {
+    padding: 120px 15%; }
+    .main_section .main_title {
+      font-size: 25px; } }
+
+@media only screen and (max-width: 480px) {
+  .main_section .main_title {
+    font-size: 22px; } }
